@@ -1,0 +1,32 @@
+[
+  {
+    "CustomerID":"0017-IUDMW",
+    "Churn Label":"No",
+    "Contract":"Two year",
+    "Tenure Months":72,
+    "Monthly Charges":116.8,
+    "Total Charges":8456.75,
+    "es_outlier_iso":1,
+    "es_outlier_iqr":0
+  },
+  {
+    "CustomerID":"0106-UGRDO",
+    "Churn Label":"No",
+    "Contract":"Two year",
+    "Tenure Months":69,
+    "Monthly Charges":116.0,
+    "Total Charges":8182.85,
+    "es_outlier_iso":1,
+    "es_outlier_iqr":0
+  },
+  {
+    "CustomerID":"3396-DKDEL",
+    "Churn Label":"No",
+    "Contract":"Two year",
+    "Tenure Months":70,
+    "Monthly Charges":115.15,
+    "Total Charges":8250.0,
+    "es_outlier_iso":1,
+    "es_outlier_iqr":0
+  }
+]

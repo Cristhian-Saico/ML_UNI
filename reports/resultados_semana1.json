@@ -1,0 +1,30 @@
+{
+  "n_ocultos": 1292,
+  "evaluacion": "recuperación interna en train",
+  "resultados": [
+    {
+      "Método": "KNN estandarizado",
+      "RMSE": 2596.594472,
+      "MAE": 1014.620743,
+      "Negativas": 0
+    },
+    {
+      "Método": "KNN sin escala",
+      "RMSE": 3854.636386,
+      "MAE": 1861.355728,
+      "Negativas": 0
+    },
+    {
+      "Método": "Iterativa estandarizada",
+      "RMSE": 5582.664296,
+      "MAE": 2947.010721,
+      "Negativas": 98
+    },
+    {
+      "Método": "Mediana",
+      "RMSE": 18665.135986,
+      "MAE": 10563.208978,
+      "Negativas": 0
+    }
+  ]
+}

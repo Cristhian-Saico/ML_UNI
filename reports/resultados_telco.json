@@ -1,0 +1,471 @@
+{
+  "dataset":"telco",
+  "source_sha256":"1bcbc0ccc9b352175216979102628e579cfbde2c3ff57b005de168a433122640",
+  "rows":7043,
+  "cols":33,
+  "train_rows":5634,
+  "test_rows":1409,
+  "numeric_cols":[
+    "Tenure Months",
+    "Monthly Charges",
+    "Total Charges"
+  ],
+  "top3_train":[
+    "Total Charges",
+    "Tenure Months",
+    "Monthly Charges"
+  ],
+  "selected":"Total Charges",
+  "strong_skew_global":0,
+  "strong_skew_train":0,
+  "lambda":0.2543477034,
+  "inverse_ok":true,
+  "form_global":[
+    {
+      "variable":"Tenure Months",
+      "skew":0.2395397496,
+      "exceso_curtosis":-1.387371636,
+      "media":32.3711486582,
+      "mediana":29.0,
+      "max":72.0
+    },
+    {
+      "variable":"Monthly Charges",
+      "skew":-0.2205244339,
+      "exceso_curtosis":-1.2572596945,
+      "media":64.7616924606,
+      "mediana":70.35,
+      "max":118.75
+    },
+    {
+      "variable":"Total Charges",
+      "skew":0.9616424997,
+      "exceso_curtosis":-0.2317987609,
+      "media":2283.3004408419,
+      "mediana":1397.475,
+      "max":8684.8
+    }
+  ],
+  "form_train":[
+    {
+      "variable":"Tenure Months",
+      "skew":0.2373688506,
+      "exceso_curtosis":-1.3873470777,
+      "media":32.4850905218,
+      "mediana":29.0,
+      "max":72.0,
+      "max_sobre_mediana":2.4827586207
+    },
+    {
+      "variable":"Monthly Charges",
+      "skew":-0.2243634667,
+      "exceso_curtosis":-1.2604045458,
+      "media":64.9299609514,
+      "mediana":70.5,
+      "max":118.75,
+      "max_sobre_mediana":1.6843971631
+    },
+    {
+      "variable":"Total Charges",
+      "skew":0.9475162595,
+      "exceso_curtosis":-0.2674942088,
+      "media":2302.6042659083,
+      "mediana":1398.125,
+      "max":8684.8,
+      "max_sobre_mediana":6.2117478766
+    }
+  ],
+  "shape_comparison":[
+    {
+      "metodo":"Original",
+      "skew_train":0.9475162595,
+      "abs_skew":0.9475162595
+    },
+    {
+      "metodo":"log1p",
+      "skew_train":-0.7446564621,
+      "abs_skew":0.7446564621
+    },
+    {
+      "metodo":"Yeo-Johnson",
+      "skew_train":-0.1456029019,
+      "abs_skew":0.1456029019
+    }
+  ],
+  "pipeline_shape":[
+    {
+      "variable":"Tenure Months",
+      "skew_antes_imputado":0.2373688506,
+      "skew_despues":-0.243509028,
+      "mejora_abs":false
+    },
+    {
+      "variable":"Monthly Charges",
+      "skew_antes_imputado":-0.2243634667,
+      "skew_despues":-0.2605838299,
+      "mejora_abs":false
+    },
+    {
+      "variable":"Total Charges",
+      "skew_antes_imputado":0.9494744731,
+      "skew_despues":-0.1453171397,
+      "mejora_abs":true
+    }
+  ],
+  "pipeline_train_shape":[
+    5634,
+    46
+  ],
+  "pipeline_test_shape":[
+    1409,
+    46
+  ],
+  "scalers":[
+    {
+      "metodo":"Standard",
+      "centro_o_min":2302.6042659083,
+      "escala_o_rango":2278.9706094839
+    },
+    {
+      "metodo":"Robust",
+      "centro_o_min":1398.125,
+      "escala_o_rango":3431.3375
+    },
+    {
+      "metodo":"MinMax",
+      "centro_o_min":18.85,
+      "escala_o_rango":8665.95
+    }
+  ],
+  "iqr":[
+    {
+      "variable":"Total Charges",
+      "k":1.5,
+      "split":"train",
+      "IQR_train":3431.3375,
+      "bajo":-4739.73125,
+      "alto":8985.61875,
+      "evaluados":5626,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Total Charges",
+      "k":1.5,
+      "split":"test",
+      "IQR_train":3431.3375,
+      "bajo":-4739.73125,
+      "alto":8985.61875,
+      "evaluados":1406,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Total Charges",
+      "k":3.0,
+      "split":"train",
+      "IQR_train":3431.3375,
+      "bajo":-9886.7375,
+      "alto":14132.625,
+      "evaluados":5626,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Total Charges",
+      "k":3.0,
+      "split":"test",
+      "IQR_train":3431.3375,
+      "bajo":-9886.7375,
+      "alto":14132.625,
+      "evaluados":1406,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Tenure Months",
+      "k":1.5,
+      "split":"train",
+      "IQR_train":46.0,
+      "bajo":-60.0,
+      "alto":124.0,
+      "evaluados":5634,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Tenure Months",
+      "k":1.5,
+      "split":"test",
+      "IQR_train":46.0,
+      "bajo":-60.0,
+      "alto":124.0,
+      "evaluados":1409,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Tenure Months",
+      "k":3.0,
+      "split":"train",
+      "IQR_train":46.0,
+      "bajo":-129.0,
+      "alto":193.0,
+      "evaluados":5634,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Tenure Months",
+      "k":3.0,
+      "split":"test",
+      "IQR_train":46.0,
+      "bajo":-129.0,
+      "alto":193.0,
+      "evaluados":1409,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Monthly Charges",
+      "k":1.5,
+      "split":"train",
+      "IQR_train":54.3375,
+      "bajo":-45.84375,
+      "alto":171.50625,
+      "evaluados":5634,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Monthly Charges",
+      "k":1.5,
+      "split":"test",
+      "IQR_train":54.3375,
+      "bajo":-45.84375,
+      "alto":171.50625,
+      "evaluados":1409,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Monthly Charges",
+      "k":3.0,
+      "split":"train",
+      "IQR_train":54.3375,
+      "bajo":-127.35,
+      "alto":253.0125,
+      "evaluados":5634,
+      "outliers":0,
+      "pct":0.0
+    },
+    {
+      "variable":"Monthly Charges",
+      "k":3.0,
+      "split":"test",
+      "IQR_train":54.3375,
+      "bajo":-127.35,
+      "alto":253.0125,
+      "evaluados":1409,
+      "outliers":0,
+      "pct":0.0
+    }
+  ],
+  "zscore":[
+    {
+      "split":"train",
+      "metodo":"IQR",
+      "n":0,
+      "evaluados":5626
+    },
+    {
+      "split":"train",
+      "metodo":"Z crudo",
+      "n":0,
+      "evaluados":5626
+    },
+    {
+      "split":"train",
+      "metodo":"Z log1p",
+      "n":0,
+      "evaluados":5626
+    },
+    {
+      "split":"test",
+      "metodo":"IQR",
+      "n":0,
+      "evaluados":1406
+    },
+    {
+      "split":"test",
+      "metodo":"Z crudo",
+      "n":0,
+      "evaluados":1406
+    },
+    {
+      "split":"test",
+      "metodo":"Z log1p",
+      "n":0,
+      "evaluados":1406
+    }
+  ],
+  "isolation":[
+    {
+      "contamination":0.01,
+      "anom_train":57,
+      "n_train":5626,
+      "anom_test":17,
+      "n_test":1406
+    },
+    {
+      "contamination":0.05,
+      "anom_train":282,
+      "n_train":5626,
+      "anom_test":68,
+      "n_test":1406
+    },
+    {
+      "contamination":0.1,
+      "anom_train":563,
+      "n_train":5626,
+      "anom_test":144,
+      "n_test":1406
+    }
+  ],
+  "lof":[
+    {
+      "k":10,
+      "lof_train":116,
+      "iso_train":282,
+      "ambos":12,
+      "union":386,
+      "jaccard":0.0310880829
+    },
+    {
+      "k":20,
+      "lof_train":81,
+      "iso_train":282,
+      "ambos":19,
+      "union":344,
+      "jaccard":0.0552325581
+    },
+    {
+      "k":35,
+      "lof_train":83,
+      "iso_train":282,
+      "ambos":12,
+      "union":353,
+      "jaccard":0.0339943343
+    }
+  ],
+  "p99":8040.225,
+  "cap_counts":{
+    "train":57,
+    "test":14
+  },
+  "top_values":[
+    {
+      "CustomerID":"2889-FPWRM",
+      "Churn Label":"Yes",
+      "Contract":"One year",
+      "Total Charges":8684.8
+    },
+    {
+      "CustomerID":"7569-NMZYQ",
+      "Churn Label":"No",
+      "Contract":"Two year",
+      "Total Charges":8672.45
+    },
+    {
+      "CustomerID":"9739-JLPQJ",
+      "Churn Label":"No",
+      "Contract":"Two year",
+      "Total Charges":8670.1
+    },
+    {
+      "CustomerID":"9788-HNGUT",
+      "Churn Label":"No",
+      "Contract":"Two year",
+      "Total Charges":8594.4
+    },
+    {
+      "CustomerID":"8879-XUAHX",
+      "Churn Label":"No",
+      "Contract":"Two year",
+      "Total Charges":8564.75
+    }
+  ],
+  "three_anomalies":[
+    {
+      "CustomerID":"0017-IUDMW",
+      "Churn Label":"No",
+      "Contract":"Two year",
+      "Tenure Months":72,
+      "Monthly Charges":116.8,
+      "Total Charges":8456.75,
+      "score_iso":-0.0497205228
+    },
+    {
+      "CustomerID":"0106-UGRDO",
+      "Churn Label":"No",
+      "Contract":"Two year",
+      "Tenure Months":69,
+      "Monthly Charges":116.0,
+      "Total Charges":8182.85,
+      "score_iso":-0.0473762888
+    },
+    {
+      "CustomerID":"3396-DKDEL",
+      "Churn Label":"No",
+      "Contract":"Two year",
+      "Tenure Months":70,
+      "Monthly Charges":115.15,
+      "Total Charges":8250.0,
+      "score_iso":-0.0455890495
+    }
+  ],
+  "total_charges_missing":11,
+  "lof_warnings":[
+
+  ],
+  "lof_sensitivity":[
+
+  ],
+  "iso_transformed":{
+    "raw_train":282,
+    "raw_test":68,
+    "yj_train":282,
+    "yj_test":74,
+    "ambos_test":21
+  },
+  "imputation":[
+    {
+      "metodo":"KNN estandarizado",
+      "n_ocultos":843,
+      "RMSE":78.6296224866,
+      "MAE":52.6056227758,
+      "predicciones_negativas":0
+    },
+    {
+      "metodo":"KNN sin escala",
+      "n_ocultos":843,
+      "RMSE":79.4745102634,
+      "MAE":52.8281257414,
+      "predicciones_negativas":0
+    },
+    {
+      "metodo":"Iterativa estandarizada",
+      "n_ocultos":843,
+      "RMSE":751.0964390458,
+      "MAE":600.6749483393,
+      "predicciones_negativas":132
+    },
+    {
+      "metodo":"Mediana",
+      "n_ocultos":843,
+      "RMSE":2441.2657913433,
+      "MAE":1784.6084816133,
+      "predicciones_negativas":0
+    }
+  ]
+}
